@@ -1,0 +1,4 @@
+{
+  "java.compile.nullAnalysis.mode": "automatic",
+  "java.jdt.ls.java.home": "/home/ndnhuy2504/workspace/jdk-17.0.8"
+}

@@ -1,7 +1,7 @@
 buildscript {
     repositories {
         mavenCentral()
-        jcenter()
+        // jcenter()
     }
     dependencies {
         classpath "org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}"
@@ -29,7 +29,7 @@ subprojects {
         eventuateMavenRepoUrl.split('[ ,]').each { repoUrl -> maven { url repoUrl.trim() } }
 
         mavenCentral()
-        jcenter()
+        // jcenter()
 
         maven {
             url 'https://jitpack.io'
