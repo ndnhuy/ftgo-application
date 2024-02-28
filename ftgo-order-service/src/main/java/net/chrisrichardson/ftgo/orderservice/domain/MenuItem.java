@@ -1,13 +1,12 @@
 package net.chrisrichardson.ftgo.orderservice.domain;
 
+import javax.persistence.Access;
+import javax.persistence.AccessType;
+import javax.persistence.Embeddable;
 import net.chrisrichardson.ftgo.common.Money;
 import org.apache.commons.lang.builder.EqualsBuilder;
 import org.apache.commons.lang.builder.HashCodeBuilder;
 import org.apache.commons.lang.builder.ToStringBuilder;
-
-import javax.persistence.Access;
-import javax.persistence.AccessType;
-import javax.persistence.Embeddable;
 
 @Embeddable
 @Access(AccessType.FIELD)
@@ -17,8 +16,7 @@ public class MenuItem {
   private String name;
   private Money price;
 
-  private MenuItem() {
-  }
+  private MenuItem() {}
 
   public MenuItem(String id, String name, Money price) {
     this.id = id;
